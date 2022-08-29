@@ -53,7 +53,7 @@ function updateValue() {
     if(i==0 && sign1=="+"){
       sign1 = "";
     }
-    real += sign1+Math.abs(realArr[i]/realArr.length).toFixed(2)+"\\cos("+ (2*i/realArr.length*Math.PI).toFixed(2) + "x)"+sign2+Math.abs(imagArr[i]/realArr.length).toFixed(2)+"\\sin("+(2*i/realArr.length*Math.PI).toFixed(2) + "x)";
+    real += sign1+Math.abs(realArr[i]/realArr.length).toFixed(2)+"\\cos("+ (2*i/realArr.length*Math.PI).toFixed(2) + "t)"+sign2+Math.abs(imagArr[i]/realArr.length).toFixed(2)+"\\sin("+(2*i/realArr.length*Math.PI).toFixed(2) + "t)";
   }
   imag = ""
   for(let i=0; i<imagArr.length; i++){
@@ -62,7 +62,7 @@ function updateValue() {
     if(i==0 && sign1=="+"){
       sign1 = "";
     }
-    imag += sign1+Math.abs(realArr[i]/realArr.length).toFixed(2)+"\\sin("+ (2*i/realArr.length*Math.PI).toFixed(2) + "x)"+sign2+Math.abs(imagArr[i]/realArr.length).toFixed(2)+"\\cos("+(2*i/realArr.length*Math.PI).toFixed(2) + "x)";
+    imag += sign1+Math.abs(realArr[i]/realArr.length).toFixed(2)+"\\sin("+ (2*i/realArr.length*Math.PI).toFixed(2) + "t)"+sign2+Math.abs(imagArr[i]/realArr.length).toFixed(2)+"\\cos("+(2*i/realArr.length*Math.PI).toFixed(2) + "t)";
   }
   if(real == ""){
     real = "?";
